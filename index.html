@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+    <div class="contact-us">
+      <h2>contact us</h2>
+      <form>
+        <div class="f-name">
+          <label for="f-name">first name</label>
+          <input type="text" id="f-name" required="">
+        </div>
+        <div class="l-name">
+          <label for="l-name">last name</label>
+          <input type="text" id="l-name" required="">
+        </div>
+        <div class="e-mail">
+          <label for="e-mail">email address</label>
+          <input type="email" id="e-mail" required="">
+        </div>
+        <label>query type</label>
+        <div class="q-type">
+          <div class="g-e-r">
+            <input type="radio" id="g-e-r" name="q-type" required="">
+            <label for="g-e-r">general enquiry</label>
+          </div>
+          <div class="s-r-r">
+            <input type="radio" id="s-r-r" name="q-type" required="">
+            <label for="s-r-r">support request</label>
+          </div>
+        </div>
+        <div class="m-essage">
+          <label>message</label>
+          <textarea id="m-essage" rows="5" cols="30" required=""></textarea>
+        </div>
+        <div class="c-heck">
+          <input type="checkbox" id="c-heck" required="">
+          <label for="c-heck">i consent to being contacted by the team</label>
+        </div>
+        <input id="btn" type="submit" value="submit">
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+  
+
+</body>
+</html>
